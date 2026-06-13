@@ -1,0 +1,186 @@
+print("People in rural areas do not have internet and data, this program is interactive with quizes and interactive lessons to teach students all the subjects")
+print ("This programs offers the following subjects: [1] Math, [2] Geography [3] Physics, [4] Chemistry, [5] Biology, [6] Economics")
+print ("hello , what would you like to learn today")
+print (" please type the subjects in lower case letters like math or numbers , AKA 1 for math")
+subject = str(input("Type the lesson you would like to learn"))
+if subject == "math" or subject == "1":
+    print("Topics include 1.area and volume, 2. quadratic, 3. Sequences, 4. Sets")
+    topic = input("What topic are you interested in?")
+    if topic == "area and volume" or topic == "1":
+        print("You must remember these formulas")
+
+        print("The area of a circle 🔴 is 3.14*radius*radius")
+
+        print("The area of rectangle ▭ is length * width")
+
+        print(" The volume of a cylinder is 3.14*radius*radius*height")
+        
+
+        print("Now let's test your knowledge on areas and volumes of shapes")
+        vol = 1021
+        answer = 0
+        while "answer" != 1021:
+            print("what is the volume of a cylinder with a radius of 5 and height of 13 to nearest whole number")
+            answer = float(input("Please type the volume of the cylinder here"))
+            if answer == 1021:
+                print("Well done")
+                break
+            else:
+                print("That's not quite, please try again")
+        print("Let's work on a few more")
+        area = 42
+        answer = 0
+        while "answer" != 42:
+            print("what is the area of a rectangle with a width of 6 and length of 7")
+            answer = float(input("Type the area of the rectangle here "))
+            if answer == 42:
+                print("well done")
+                break
+            else:
+                print("That's not the answer, try again")
+        print("we are almost there, keep it up")
+        circle= 254
+        answer = 0
+        while "answer" != 254:
+            print("What is the area of a circle with a diameter of 18 to the nearest whole number")
+            print("The radius is diameter * 0.5, lemme get you started, the radius is 9")
+            answer = float(input("Do you know the area of this circle"))
+            if answer == 254:
+                print("well done")
+                break
+            else:
+                print("Try again")
+        print(" well done you have mastered area and volume")
+    if topic == "quadratic" or topic == "2":
+        x1 = 0
+        x2=0
+        print("This topic is easy")
+        print("The quadratic formula is x1= (-b+√(b*b)-)4*a*c)/2a x2 = x1= (-b-√(b*b)-)4*a*c)/2a ")
+        print("find the values of x for  x²-7x+6 ")
+    # Please calculate the values and enter the lowest values first
+    # For example, if the answer is 51 and 7, you enter 7 for x1 and 51 for x2
+        while x1 != 1 and x2 != 6:
+            x1= int(input("what is the first value"))
+            x2 = int(input("What is the second value"))
+            if x1 ==1 and x2 == 6:
+                print("You are correct")
+                break
+            else:
+                print("That's not the answer, try again")
+            root = 0
+            a=0
+            b = 0
+            c=0
+            print("Let's do more practice on quadratics")
+        while True:
+            print(" a quadratic equation of ax² +bx +c has a root of -1/3")
+            print("Find the 2nd root of this quadratic and the values of a, b and c")
+            root= int(input("What is the 2nd root of this quadratic"))
+            a= int(input("what is the value of a? PS It is 3"))
+            b= int(input("What is the value of b?"))
+            c= int(input("What is the value of c?"))
+            if root == -9 and a == 3 and b == 28 and c == 9:
+                print("You are a true math prodigy, well done")
+                break
+            else:
+                print("This is a tough question, you got this, try again")
+        y1 = 0
+        y2 = 0
+        while y1 != -1 and y2 != -1.75:
+            print("Find the roots of this quadratic equation 4x² + 11x + 7")
+            y1= int(input("Please type the integral root here"))
+            y2 = float(input("Please type the root with 2 decimal places here"))
+            if y1 == -1 and y2 == -1.75:
+                print("Well done, you got this question right")
+                break
+            else:
+                print("That's not quite right, why don't you give it another try?")
+        print("You have mastered quadratics")
+    if topic == "sequence" or topic == "3":
+        print("This topic is super easy")
+        print("You only need to remember the rules")
+        print(" For example in [3,7,11,15] the rule is add 4")
+        print(" In [29,25,21,17,13] the rule is minus 4")
+        answer = 0
+        while answer != 3:
+            answer = int(input(" What is the term to term rule in [ 15, 20, 25, 30,35] [1] 12+3n, [2] 10+2.5n, [3] 10+5n, [4] 20-5n"))
+            if answer == 3:
+                print("well done, you got the hang of sequences")
+                break
+            else:
+                print("Try again")
+        termRule=0
+        while termRule != 1:
+            print("What is the term to term rule of [47 , 39 , 31 , 23, 15 ] [1] 55 - 8n , [2] 47-8n, [3] 15+47n, [4] 47- 15n")
+            if termRule == 1:
+                print(" well done")
+                break
+            else:
+                print("Try again")
+        answer = 0
+        while answer != 4:
+            print("What is the term to rule of [90,77,64,51,38,25]? [1] 90+13n, [2] 25+13n, [3] 25+38n, [4] 90-13n")
+            answer = int(input("what is the answer?"))
+            if answer == 4:
+                print("Well done, you have now mastered sequences")
+                break
+            else:
+                print("Try again")
+    if topic == "sets" or "4":
+        print("Sets is a particularly new topic")
+        print("The first rule is intersection")
+        print("If set A {1,2,3} and set B {1,3,5} intersect")
+        print("It would be 1 and 3 as it is present in both sets")
+        print(" The second rule is union which means combining the elements in both sets")
+        print("If set A {1,2,3} and set B {1,3,5} union, the answer would be 1,2,3,5")
+        answer = 0
+        while answer != 2:
+            print("What will be the numbers when set A {2,4,6,8} and set B {1,3,5,7,9} are in union?")
+            answer = int(input("[1]. Nothing, [2] 1,2,3,4,5,6,7,8,9 , [3] 0 , [4] 1,3,4,5,8"))
+            if answer == 2:
+                print("You showed a clear understanding in union sets")
+                break
+            else:
+                print("Try again")
+if subject == "geography" or subject == "2":
+    print ("Which topic in geography would you like to learn")
+    print("[1]. river")
+    print("[2]. tectonics")
+    print("[3] development")
+    print("[4] coasts")
+    topic=int(input("which topic would you want to learn?"))
+    if topic == 1 or topic == "river":
+        print("This topic is relatively simple")
+        print("The Drainage Basin: The entire area of land drained by a main river and its branches is called a drainage basin. The boundary separating two neighboring basins is a high ridge of land called a watershed.")
+        print("River Processes: Rivers change landscapes using three actions: Erosion (wearing away rock), Transportation (moving rock and dirt downstream), and Deposition (dropping the dirt when the water loses energy and slows down)")
+        print("There are 3 courses in the river")
+        print("upper Course (Source): Steep, high-altitude terrain. Vertical erosion cuts deep V-shaped valleys.")
+        print("Middle Course: The land flattens. Lateral (sideways) erosion widens the valley. The river begins to loop into winding curves called meanders.")
+        print("Lower Course (Mouth): The flat plain before entering the ocean. Water moves slowly and drops its sediment load, building a flat floodplain and a branch-like delta.")
+        landform = ""
+        while landform != "delta":
+            print("Unscramble this geographic keyword to name the fertile, branch-like land structure formed at a river's mouth by heavy sand and mud deposits: [ A T L E D ]")
+            landform = str(input("What is the name of the unscrambled landform?")).strip().lower()
+            if landform == "delta" or landform == "DELTA":
+                print("Well done")
+                break
+            else:
+                print("try again")
+    if topic == "tectonics" or topic == 2:
+        print("This is al about the earth structure")
+        print("The Earth’s outer shell is cracked into massive puzzle pieces called Tectonic Plates.")
+        print("These plates float on the semi-fluid mantle beneath them.")
+        print("Where plates meet, they create boundaries: Convergent (crashing together to form mountains), Divergent (pulling apart to form valleys/oceans), and Transform (sliding past each other, causing earthquakes).")
+
+
+
+
+
+
+
+
+
+
+
+
+
