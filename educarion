@@ -29,7 +29,7 @@ say_and_print("People in rural areas do not have internet and data, this program
 say_and_print ("This programs offers the following subjects: [1] Math, [2] Geography [3] Physics, [4] Chemistry, [5] Biology, [6] Economics")
 say_and_print ("hello , what would you like to learn today")
 say_and_print (" please type the subjects in lower case letters like math or numbers , AKA 1 for math")
-subject = str(input("Type the lesson you would like to learn"))
+subject = int(input("Type the lesson you would like to learn"))
 if subject == "math" or subject == 1:
     say_and_print("Topics include 1.area and volume, 2. quadratic, 3. Sequences, 4. Sets")
     topic = input("What topic are you interested in?")
@@ -340,7 +340,7 @@ if subject == "physics" or subject =="3":
                 say_and_print("Not quite. Your choices are alpha, beta, or gamma. Try again.")
 
 # ================= 4. CHEMISTRY SUBJECT =================
-elif subject == "chemistry" or subject == 4:
+if subject == "chemistry" or subject == 4:
     say_and_print("Welcome to chemistry class")
     say_and_print("here are the following topics")
     say_and_print("[1] Testing for metal ions")
@@ -348,15 +348,9 @@ elif subject == "chemistry" or subject == 4:
     say_and_print("[3] The periodic table")
     say_and_print("[4] Organic chemistry")
     topic=int(input("Which chemistry topic would you like to learn?"))
-
-
-
-    # --- TOPIC 1: TESTING FOR METAL IONS ---
     if topic == "testing for metal ions" or topic == 1:
         say_and_print("Welcome to Testing for Metal Ions.")
         say_and_print("Metal ions can be identified using flame tests. For example, Copper produces a green flame, and Sodium produces a yellow flame.")
-
-        # Question 1
         flame_ans1 = ""
         while flame_ans1 != "copper":
             say_and_print("Question 1: Which metal ion produces a distinctive green flame during a flame test?")
@@ -366,8 +360,6 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Not quite. Think of pennies or wires! Try again.")
-
-        # Question 2
         flame_ans2 = ""
         while flame_ans2 != "sodium":
             say_and_print("Question 2: Which metal ion produces a bright yellow or orange flame during a flame test?")
@@ -377,15 +369,11 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Hint: It is a common element found in table salt. Try again.")
-
-    # --- TOPIC 2: ELECTROLYSIS ---
-    elif topic == "electrolysis" or topic == 2:
+    if topic == "electrolysis" or topic == 2:
         say_and_print("Welcome to Electrolysis.")
         say_and_print("Electrolysis is the splitting up of an ionic compound using electricity.")
         say_and_print(
             "Positively charged ions move towards the negative electrode (cathode), and negatively charged ions move towards the positive electrode (anode).")
-
-        # Question 1
         elec_ans1 = ""
         while elec_ans1 != "cathode":
             say_and_print("Question 1: What is the name of the negative electrode that attracts positive ions?")
@@ -395,8 +383,6 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Hint: It is either cathode or anode. Try again.")
-
-        # Question 2
         elec_ans2 = ""
         while elec_ans2 != "anode":
             say_and_print("Question 2: What is the name of the positive electrode that attracts negative ions?")
@@ -406,14 +392,10 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Hint: It is the opposite of the cathode. Try again.")
-
-    # --- TOPIC 3: THE PERIODIC TABLE ---
-    elif topic == "the periodic table" or topic == 3:
+    if topic == "the periodic table" or topic == 3:
         say_and_print("Welcome to The Periodic Table.")
         say_and_print("Elements are arranged by their atomic number.")
         say_and_print("Group 1 elements are known as the Alkali Metals, and Group 7 elements are known as Halogens.")
-
-        # Question 1
         table_ans1 = ""
         while table_ans1 != "alkali metals":
             say_and_print(
@@ -424,8 +406,6 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Incorrect. Think of basic, high-p-H metals. Try again.")
-
-        # Question 2
         table_ans2 = ""
         while table_ans2 != "halogens":
             say_and_print(
@@ -436,15 +416,10 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Not quite right. They are called halogens. Try again.")
-
-    # --- TOPIC 4: ORGANIC CHEMISTRY ---
-    elif topic == "organic chemistry" or topic == 4:
+    if topic == "organic chemistry" or topic == 4:
         say_and_print("Welcome to Organic Chemistry.")
         say_and_print("Organic chemistry deals with carbon-based compounds.")
-        say_and_print(
-            "Alkanes are saturated hydrocarbons containing only single bonds. Alkenes are unsaturated hydrocarbons containing at least one carbon-to-carbon double bond.")
-
-        # Question 1
+        say_and_print("Alkanes are saturated hydrocarbons containing only single bonds. Alkenes are unsaturated hydrocarbons containing at least one carbon-to-carbon double bond.")
         organic_ans1 = ""
         while organic_ans1 != "alkanes":
             say_and_print("Question 1: Are hydrocarbons containing only single carbon bonds called alkanes or alkenes?")
@@ -454,8 +429,6 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Not quite. Check your spelling and try again.")
-
-        # Question 2
         organic_ans2 = ""
         while organic_ans2 != "carbon":
             say_and_print(
@@ -466,3 +439,60 @@ elif subject == "chemistry" or subject == 4:
                 break
             else:
                 say_and_print("Incorrect. Hint: Think of coal, diamonds, or the basis of life! Try again.")
+if subject == "biology" or subject ==5:
+    say_and_print("Welcome to biology class")
+    say_and_print("Which topic would you want to learn")
+    say_and_print("[1] Human heart")
+    say_and_print("[2]Biological molecules")
+    say_and_print("[3] Enzymes")
+    say_and_print("[4] Translocation")
+    topic = int(input("Type the number according to the topic you want to learn"))
+    if topic == 1:
+        say_and_print("Welcome to the human heart class")
+        say_and_print("There are arteries, they all start with letter a and transport blood away from the heart")
+        say_and_print("Pulmonary artery is an artery")
+        say_and_print("Veins transport blood to the heart")
+        say_and_print("Pulmonary vein is a vein")
+        vein = ""
+        artery = ""
+        while vein != "vein":
+            say_and_print("Is vena cava a vein or an artery")
+            vein = str(input("Type the answer here"))
+            if vein == "vein":
+                say_and_print("yes, vena cava is a vein")
+            else:
+                say_and_print("Try again")
+        while artery != "yes":
+            say_and_print("Is the aorta an artery, yes or no")
+            artery = str(input("Type yes or no, which ever you think the answer is"))
+            if artery == "yes":
+                say_and_print("Yes, the aorta is an artery, well done")
+                break
+            else:
+                say_and_print("It starts with A, think about what I've told you")
+    if topic == 2:
+        food1=""
+        element=""
+        say_and_print("Let's learn about biological molecules")
+        say_and_print("Carbohydrates, found in rice contain carbon, oxygen and hydrogen")
+        say_and_print("It is a polysaccaride, alongside with glycogen, cellulose and starch")
+        say_and_print("sucrose and maltose are dissacharides")
+        say_and_print("Glucose and fructose are monosaccarides")
+        say_and_print("Protein is found in meat and contains all the elements in carbohydrates with nitrogen")
+        say_and_print("lipids contain the same elements in carbohydrates, it is in avocados")
+        while food1 != "carbohydrate":
+            say_and_print("Is potato a protein, carbohydrate or lipid")
+            food1= str(input("Enter your answer"))
+            if food1 == "carbohydrate" :
+                say_and_print("yes, potato is a carbohydrate")
+                break
+            else:
+                say_and_print("Try again, think of rice")
+        while element != "nitrogen":
+            say_and_print("What element is found in protein only")
+            element= str(input("Type the element here"))
+            if element == "nitrogen":
+                say_and_print("Yes, well done")
+                break
+            else:
+                say_and_print("Think again, it starts with an N and ends in an N")
