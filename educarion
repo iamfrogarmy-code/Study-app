@@ -26,13 +26,14 @@ def say_and_print(text):
 
 # Linux fallback
 say_and_print("People in rural areas do not have internet and data, this program is interactive with quizes and interactive lessons to teach students all the subjects")
-say_and_print ("This programs offers the following subjects: [1] Math, [2] Geography [3] Physics, [4] Chemistry, [5] Biology, [6] Economics")
+say_and_print ("This programs offers the following subjects: [1] Math, [2] Geography [3] Physics, [4] Chemistry, [5] Biology")
 say_and_print ("hello , what would you like to learn today")
-say_and_print (" please type the subjects in lower case letters like math or numbers , AKA 1 for math")
+say_and_print (" please type the subjects in numbers AKA 1 for math")
+#Here , you type the number according to the subject you want to learn
 subject = int(input("Type the lesson you would like to learn"))
 if subject == "math" or subject == 1:
     say_and_print("Topics include 1.area and volume, 2. quadratic, 3. Sequences, 4. Sets")
-    topic = input("What topic are you interested in?")
+    topic = int(input("What topic are you interested in?"))
     if topic == "area and volume" or topic == 1:
         say_and_print("You must remember these formulas")
 
@@ -153,7 +154,7 @@ if subject == "math" or subject == 1:
                 break
             else:
                 say_and_print("Try again")
-    if topic == "sets" or 4:
+    if topic == "sets" or  topic == 4:
         say_and_print("Sets is a particularly new topic")
         say_and_print("The first rule is intersection")
         say_and_print("If set A {1,2,3} and set B {1,3,5} intersect")
@@ -178,7 +179,7 @@ if subject == "geography" or subject == 2:
     say_and_print("2. tectonics")
     say_and_print("3. development")
     say_and_print("4. coasts")
-    topic = input("Which topic would you want to learn? ").lower().strip()
+    topic = int(input("Which topic would you want to learn? "))
 
     # --- TOPIC 1: RIVERS ---
     if topic == 1 or topic == "river":
@@ -237,8 +238,7 @@ if subject == "geography" or subject == 2:
     # --- TOPIC 3: DEVELOPMENT ---
     if topic == 3 or topic == "development":
         say_and_print("Development measures how advanced a country is economically and socially.")
-        say_and_print(
-            "We track this using indicators like Gross Domestic Product (GDP), life expectancy, and literacy rates.")
+        say_and_print("We track this using indicators like Gross Domestic Product (GDP), life expectancy, and literacy rates.")
         # Place calculation lessons or questions here later!
         say_and_print("Lesson completed.")
 
@@ -471,14 +471,14 @@ if subject == "biology" or subject ==5:
             else:
                 say_and_print("It starts with A, think about what I've told you")
     if topic == 2:
-        food1=""
-        element=""
+        food1=''
+        element=''
         say_and_print("Let's learn about biological molecules")
         say_and_print("Carbohydrates, found in rice contain carbon, oxygen and hydrogen")
         say_and_print("It is a polysaccaride, alongside with glycogen, cellulose and starch")
         say_and_print("sucrose and maltose are dissacharides")
         say_and_print("Glucose and fructose are monosaccarides")
-        say_and_print("Protein is found in meat and contains all the elements in carbohydrates with nitrogen")
+        say_and_print("Protein is found in meat and contains all the elements in carbohydrates with nitrogen and sulfur")
         say_and_print("lipids contain the same elements in carbohydrates, it is in avocados")
         while food1 != "carbohydrate":
             say_and_print("Is potato a protein, carbohydrate or lipid")
@@ -488,11 +488,73 @@ if subject == "biology" or subject ==5:
                 break
             else:
                 say_and_print("Try again, think of rice")
-        while element != "nitrogen":
+        while element != "nitrogen" or element != "sulfur":
             say_and_print("What element is found in protein only")
             element= str(input("Type the element here"))
-            if element == "nitrogen":
+            if element == "nitrogen" or "sulfur":
                 say_and_print("Yes, well done")
                 break
             else:
                 say_and_print("Think again, it starts with an N and ends in an N")
+    if topic == 3:
+        enzyme1=''
+        product=''
+        say_and_print("Today we will learn about enzymes")
+        say_and_print("Amylase breaks down starch into glucose")
+        say_and_print("Protease breaks down proteins into amino acids")
+        say_and_print("Lipase breaks down lipids into fatty acids and glycerol")
+        while enzyme1 != "protease" :
+            say_and_print("Which enzyme breaks down protein to amino acids")
+            enzyme1= str(input("Type the name of the enzyme here"))
+            if enzyme1== "protease":
+                say_and_print("Yes, well done")
+                break
+            else:
+                say_and_print("Try again")
+        while product != "glycerol":
+            say_and_print("What is another product formed other than fatty acids when lipids are broken down by lipase")
+            product=str(input("Type the product here"))
+            if product =="glycerol":
+                say_and_print("Yes, you are correct")
+                break
+            else:
+                say_and_print("Try again")
+    if topic == 4:
+        direction = ''
+        source= ''
+        say_and_print("Today we are learning translocation")
+        say_and_print("It is all about the phloem")
+        say_and_print("It transports amino acids and sucrose from leaves to roots in summer")
+        say_and_print("It transports amino acids and sucrose from roots to leaves in winter")
+        while direction != 2:
+            say_and_print("How many direction does the phloem transport products in")
+            direction = int(input("What is the number of directions?"))
+            if direction == 2:
+                say_and_print("yes, well done")
+                break
+            else:
+                say_and_print("Try again")
+        while source != "roots":
+            say_and_print("What is the source in translocation during winter")
+            source = str(input("Type the source here roots or leaves?"))
+            if source == "roots":
+                say_and_print("You have mastered translocation")
+                break
+            else:
+                say_and_print("Try again")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
