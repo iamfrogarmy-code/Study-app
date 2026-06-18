@@ -275,7 +275,7 @@ if subject == "geography" or subject == 2:
                 say_and_print("Hint: It starts with the word 'Longshore'. Give it another shot.")
 
         say_and_print("Fantastic job! You have completed the Coasts lesson.")
-if subject == "physics" or subject =="3":
+if subject == "physics" or subject == 3:
     say_and_print("which topics would you want to learn")
     say_and_print("[1] Forces")
     say_and_print("[2] Electricity")
